@@ -57,13 +57,14 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Speed>6</Speed>
                         <HP>40</HP>
                         <MP>50</MP>
                         <Strength>2</Strength>
                         <Magic>2</Magic>
                         <Defense>1</Defense>
                         <MagicResist>3</MagicResist>
+                        <Speed>6</Speed>
+                        <timer>0</timer>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -88,13 +89,14 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Speed>4</Speed>
                         <HP>70</HP>
                         <MP>0</MP>
                         <Strength>4</Strength>
                         <Magic>0</Magic>
                         <Defense>4</Defense>
                         <MagicResist>1</MagicResist>
+                        <Speed>4</Speed>
+                        <timer>0</timer>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -119,13 +121,14 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Speed>4</Speed>
                         <HP>40</HP>
                         <MP>70</MP>
                         <Strength>2</Strength>
                         <Magic>4</Magic>
                         <Defense>2</Defense>
                         <MagicResist>2</MagicResist>
+                        <Speed>4</Speed>
+                        <timer>0</timer>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -150,13 +153,14 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Speed>5</Speed>
                         <HP>50</HP>
                         <MP>0</MP>
                         <Strength>3</Strength>
                         <Magic>0</Magic>
                         <Defense>3</Defense>
                         <MagicResist>1</MagicResist>
+                        <Speed>5</Speed>
+                        <timer>0</timer>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -181,13 +185,14 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Speed>5</Speed>
                         <HP>50</HP>
                         <MP>0</MP>
                         <Strength>3</Strength>
                         <Magic>0</Magic>
                         <Defense>3</Defense>
                         <MagicResist>1</MagicResist>
+                        <Speed>5</Speed>
+                        <timer>0</timer>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -212,13 +217,14 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Speed>5</Speed>
                         <HP>50</HP>
                         <MP>0</MP>
                         <Strength>3</Strength>
                         <Magic>0</Magic>
                         <Defense>3</Defense>
                         <MagicResist>1</MagicResist>
+                        <Speed>5</Speed>
+                        <timer>0</timer>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -455,7 +461,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Text" uid="21">
+                <instance type="SweetText" uid="21">
                     <properties>
                         <text>Sweet Tato</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -482,7 +488,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Text2" uid="22">
+                <instance type="WarriorText" uid="22">
                     <properties>
                         <text>Warrior Tato</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -509,7 +515,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Text3" uid="23">
+                <instance type="WizardText" uid="23">
                     <properties>
                         <text>Wizard Tato</text>
                         <initial-visibility>Visible</initial-visibility>

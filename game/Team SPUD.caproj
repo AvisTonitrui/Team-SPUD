@@ -59,13 +59,14 @@
         <object-type name="SweetTato" sid="789456639178210">
             <plugin id="Sprite" />
             <instance-variables>
-                <instance-variable name="Speed" sid="954585959912365" type="number" />
                 <instance-variable name="HP" sid="618373868799026" type="number" />
                 <instance-variable name="MP" sid="375584695913409" type="number" />
                 <instance-variable name="Strength" sid="152893126850653" type="number" />
                 <instance-variable name="Magic" sid="993636519457887" type="number" />
                 <instance-variable name="Defense" sid="298038759630911" type="number" />
                 <instance-variable name="MagicResist" sid="389503683383150" type="number" />
+                <instance-variable name="Speed" sid="954585959912365" type="number" />
+                <instance-variable name="timer" sid="635717491030795" type="number" />
             </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="176519042636353" speed="5">
@@ -87,13 +88,14 @@
         <object-type name="WarriorTato" sid="414280337171525">
             <plugin id="Sprite" />
             <instance-variables>
-                <instance-variable name="Speed" sid="670450396773825" type="number" />
                 <instance-variable name="HP" sid="270139701791532" type="number" />
                 <instance-variable name="MP" sid="647982776390409" type="number" />
                 <instance-variable name="Strength" sid="701044966427846" type="number" />
                 <instance-variable name="Magic" sid="454576957306295" type="number" />
                 <instance-variable name="Defense" sid="544655688806887" type="number" />
                 <instance-variable name="MagicResist" sid="423178466597464" type="number" />
+                <instance-variable name="Speed" sid="670450396773825" type="number" />
+                <instance-variable name="timer" sid="354069555573367" type="number" />
             </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="299305509064794" speed="5">
@@ -115,13 +117,14 @@
         <object-type name="WizardTato" sid="550772430456940">
             <plugin id="Sprite" />
             <instance-variables>
-                <instance-variable name="Speed" sid="983746424053893" type="number" />
                 <instance-variable name="HP" sid="106938188789274" type="number" />
                 <instance-variable name="MP" sid="585136172403514" type="number" />
                 <instance-variable name="Strength" sid="291477907090198" type="number" />
                 <instance-variable name="Magic" sid="369864082309822" type="number" />
                 <instance-variable name="Defense" sid="855198572478663" type="number" />
                 <instance-variable name="MagicResist" sid="154636533488889" type="number" />
+                <instance-variable name="Speed" sid="983746424053893" type="number" />
+                <instance-variable name="timer" sid="193473886935455" type="number" />
             </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="908484787678886" speed="5">
@@ -143,13 +146,14 @@
         <object-type name="EvilMushrooms" sid="800301144967597">
             <plugin id="Sprite" />
             <instance-variables>
-                <instance-variable comment="the speed attribute" name="Speed" sid="266372078120103" type="number" />
                 <instance-variable name="HP" sid="895308335754470" type="number" />
                 <instance-variable name="MP" sid="180637207587112" type="number" />
                 <instance-variable name="Strength" sid="160046191649999" type="number" />
                 <instance-variable name="Magic" sid="644812441718817" type="number" />
                 <instance-variable name="Defense" sid="206799547882167" type="number" />
                 <instance-variable name="MagicResist" sid="273179752238995" type="number" />
+                <instance-variable comment="the speed attribute" name="Speed" sid="266372078120103" type="number" />
+                <instance-variable name="timer" sid="252346016179754" type="number" />
             </instance-variables>
             <animation-folder>
                 <animation framecount="8" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="387498721736803" speed="8">
@@ -266,13 +270,13 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Text" sid="333204634812765">
+        <object-type name="SweetText" sid="333204634812765">
             <plugin id="Text" />
         </object-type>
-        <object-type name="Text2" sid="253562003470944">
+        <object-type name="WarriorText" sid="253562003470944">
             <plugin id="Text" />
         </object-type>
-        <object-type name="Text3" sid="934405098058630">
+        <object-type name="WizardText" sid="934405098058630">
             <plugin id="Text" />
         </object-type>
         <object-type name="SweetHP" sid="161775286558872">
