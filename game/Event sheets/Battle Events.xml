@@ -367,9 +367,6 @@
                                 <action id="-15" name="Set visible" sid="987538106275291" type="Fight">
                                     <param id="0" name="Visibility">1</param>
                                 </action>
-                                <action id="-15" name="Set visible" sid="685477465728729" type="Heal">
-                                    <param id="0" name="Visibility">1</param>
-                                </action>
                                 <action id="-15" name="Set visible" sid="906598331535106" type="Run">
                                     <param id="0" name="Visibility">1</param>
                                 </action>
@@ -377,6 +374,22 @@
                                     <param id="0" name="Color">rgb(255, 255, 255)</param>
                                 </action>
                             </actions>
+                            <sub-events>
+                                <event-block sid="964907745851113">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="324368262207456" type="SweetTato">
+                                            <param id="0" name="Instance variable">CurrentMP</param>
+                                            <param id="1" name="Comparison">5</param>
+                                            <param id="2" name="Value">5</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="685477465728729" type="Heal">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                         <comment>the controls for processing Sweet Tatos turn</comment>
                         <event-block sid="249512602524420">
@@ -694,6 +707,11 @@
                                             <param id="0" name="Variable">processing</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">4</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="222607612671060" type="SweetTato">
+                                            <param id="0" name="Instance variable">CurrentMP</param>
+                                            <param id="1" name="Comparison">5</param>
+                                            <param id="2" name="Value">5</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -1111,9 +1129,6 @@
                                 <action id="-15" name="Set visible" sid="651526158974503" type="Fight">
                                     <param id="0" name="Visibility">1</param>
                                 </action>
-                                <action id="-15" name="Set visible" sid="355937636729721" type="SaltSmack">
-                                    <param id="0" name="Visibility">1</param>
-                                </action>
                                 <action id="-15" name="Set visible" sid="279820578018903" type="Run">
                                     <param id="0" name="Visibility">1</param>
                                 </action>
@@ -1121,6 +1136,22 @@
                                     <param id="0" name="Color">rgb(255, 255, 255)</param>
                                 </action>
                             </actions>
+                            <sub-events>
+                                <event-block sid="377564472721407">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="904271816105683" type="WizardTato">
+                                            <param id="0" name="Instance variable">CurrentMP</param>
+                                            <param id="1" name="Comparison">5</param>
+                                            <param id="2" name="Value">5</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="355937636729721" type="SaltSmack">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                         <comment>the controls for processing Warrior Tatos turn</comment>
                         <event-block sid="891291103719777">
@@ -1438,6 +1469,11 @@
                                             <param id="0" name="Variable">processing</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">11</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="439690888379287" type="WizardTato">
+                                            <param id="0" name="Instance variable">CurrentMP</param>
+                                            <param id="1" name="Comparison">5</param>
+                                            <param id="2" name="Value">5</param>
                                         </condition>
                                     </conditions>
                                     <actions>
