@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Text" uid="31">
+                <instance type="YouLose" uid="31">
                     <properties>
                         <text>You Lose!</text>
                         <initial-visibility>Visible</initial-visibility>

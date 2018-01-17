@@ -17,7 +17,6 @@
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
-        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
@@ -52,9 +51,6 @@
         </object-type>
         <object-type name="Mouse" sid="3506161195311074">
             <plugin id="Mouse" />
-        </object-type>
-        <object-type name="Touch" sid="2463496682349194">
-            <plugin id="Touch" />
         </object-type>
         <object-type name="Audio" sid="2722091819329769">
             <plugin id="Audio" />
@@ -340,7 +336,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Text" sid="361982632747026">
+        <object-type name="YouLose" sid="361982632747026">
             <plugin id="Text" />
         </object-type>
         <object-type name="highlight" sid="481732997806559">
@@ -379,11 +375,6 @@
     <global-instances>
         <global-instance type="Keyboard" uid="3" />
         <global-instance type="Mouse" uid="4" />
-        <global-instance type="Touch" uid="5">
-            <properties>
-                <use-mouse-input>Yes</use-mouse-input>
-            </properties>
-        </global-instance>
         <global-instance type="Audio" uid="6">
             <properties>
                 <timescale-audio>Off</timescale-audio>
