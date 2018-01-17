@@ -787,11 +787,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>395</x>
-                        <y>151</y>
+                        <x>400</x>
+                        <y>200</y>
                         <z>0</z>
-                        <width>652</width>
-                        <height>269</height>
+                        <width>800</width>
+                        <height>400</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
