@@ -12,8 +12,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <open-tabs>
         <layout order="0">Battle Scene</layout>
         <layout order="2">Loss Screen</layout>
-        <layout active="1" order="3">Victory Screen</layout>
-        <event-sheet order="1">Battle events</event-sheet>
+        <layout order="3">Victory Screen</layout>
+        <event-sheet active="1" order="1">Battle events</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />

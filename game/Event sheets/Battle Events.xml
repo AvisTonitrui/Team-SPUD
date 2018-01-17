@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Battle events</name>
     <events>
+        <variable constant="0" name="enemies" sid="222243599591672" static="0" type="number">3</variable>
         <variable constant="0" name="mushroomTurn" sid="596105872518273" static="0" type="number">0</variable>
         <variable constant="0" name="processing" sid="609066199871933" static="0" type="number">0</variable>
         <variable constant="0" name="sweetTurn" sid="904024087559865" static="0" type="number">0</variable>
@@ -1660,9 +1661,30 @@
         <comment>victory condition</comment>
         <event-block sid="492885518600238">
             <conditions>
-                <condition id="-3" inverted="1" name="Is on-screen" sid="373657628517099" type="EvilMushrooms" />
+                <condition id="-19" name="On destroyed" sid="373657628517099" type="EvilMushrooms" />
             </conditions>
-            <actions />
+            <actions>
+                <action id="-11" name="Subtract from" sid="145802787131752" type="System">
+                    <param id="0" name="Variable">enemies</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="159922268195398">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="182861540996100" type="System">
+                            <param id="0" name="Variable">enemies</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="505655348647095" type="System">
+                            <param id="0" name="Layout">Victory Screen</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>
