@@ -364,6 +364,20 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
+                        <event-group description="" sid="566768948737595" title="Inventory">
+                            <sub-events>
+                                <event-block sid="912363747431010">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="902823447808443" type="System">
+                                            <param id="0" name="Variable">processing</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                </event-block>
+                            </sub-events>
+                        </event-group>
                         <event-group description="" sid="787749713476881" title="Fight">
                             <sub-events>
                                 <event-group description="" sid="127034775002831" title="Enemy Highlighting">
