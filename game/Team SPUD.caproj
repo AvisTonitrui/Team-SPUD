@@ -41,7 +41,7 @@
         <prop name="Fullscreen scaling quality">Low</prop>
         <prop name="Hide address bar">No</prop>
         <prop name="Loader style">Progress bar &amp; logo</prop>
-        <prop name="Preview browser">(default)</prop>
+        <prop name="Preview browser">Chrome</prop>
         <prop name="Sampling">Point</prop>
         <prop name="Use iOS retina display">All devices</prop>
     </configuration-settings>
@@ -430,8 +430,8 @@
     </global-instances>
     <sounds-folder />
     <music-folder>
-        <file name="SPUD.m4a" />
-        <file name="SPUD.ogg" />
+        <file name="SPUD Theme.m4a" />
+        <file name="SPUD Theme.ogg" />
     </music-folder>
     <files-folder>
         <file-folder name="Icons">
