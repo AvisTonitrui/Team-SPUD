@@ -295,6 +295,7 @@
                             </conditions>
                             <actions />
                             <sub-events>
+                                <comment>open the unfinished bag</comment>
                                 <event-block sid="156567618943747">
                                     <conditions>
                                         <condition id="7" name="Cursor is over object" sid="617521863995029" type="Mouse">
@@ -308,6 +309,7 @@
                                         </action>
                                     </actions>
                                 </event-block>
+                                <comment>allow for targeting for a basic attack (5 power)</comment>
                                 <event-block sid="689532660868924">
                                     <conditions>
                                         <condition id="7" name="Cursor is over object" sid="904473198481544" type="Mouse">
@@ -321,6 +323,7 @@
                                         </action>
                                     </actions>
                                 </event-block>
+                                <comment>allow for targeting for a heal (5 hp)</comment>
                                 <event-block sid="923407942663409">
                                     <conditions>
                                         <condition id="7" name="Cursor is over object" sid="943303573918760" type="Mouse">
@@ -334,18 +337,14 @@
                                         </action>
                                     </actions>
                                 </event-block>
+                                <comment>automatically loses the fight</comment>
                                 <event-block sid="870478747898715">
                                     <conditions>
                                         <condition id="7" name="Cursor is over object" sid="174837221421737" type="Mouse">
                                             <param id="0" name="Object">Run</param>
                                         </condition>
                                     </conditions>
-                                    <actions>
-                                        <action id="-9" name="Set value" sid="753233550900275" type="System">
-                                            <param id="0" name="Variable">processing</param>
-                                            <param id="1" name="Value">5</param>
-                                        </action>
-                                    </actions>
+                                    <actions />
                                 </event-block>
                             </sub-events>
                         </event-block>

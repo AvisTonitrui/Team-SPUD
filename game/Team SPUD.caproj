@@ -341,10 +341,14 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Text" sid="361982632747026">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>Battle Scene.xml</layout>
+        <layout>Loss Screen.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Battle events.xml</event-sheet>
