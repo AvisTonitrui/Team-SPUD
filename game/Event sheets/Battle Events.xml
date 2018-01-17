@@ -414,7 +414,7 @@
                                     <actions>
                                         <action id="-9" name="Set value" sid="850402121288954" type="System">
                                             <param id="0" name="Variable">processing</param>
-                                            <param id="1" name="Value">9</param>
+                                            <param id="1" name="Value">2</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -430,7 +430,7 @@
                                     <actions>
                                         <action id="-9" name="Set value" sid="641719815602925" type="System">
                                             <param id="0" name="Variable">processing</param>
-                                            <param id="1" name="Value">10</param>
+                                            <param id="1" name="Value">3</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -880,7 +880,7 @@
                                     <actions>
                                         <action id="-9" name="Set value" sid="226751255891431" type="System">
                                             <param id="0" name="Variable">processing</param>
-                                            <param id="1" name="Value">9</param>
+                                            <param id="1" name="Value">6</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -896,7 +896,7 @@
                                     <actions>
                                         <action id="-9" name="Set value" sid="311433392394197" type="System">
                                             <param id="0" name="Variable">processing</param>
-                                            <param id="1" name="Value">10</param>
+                                            <param id="1" name="Value">7</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -1029,7 +1029,7 @@
                                     <actions>
                                         <action id="-12" name="Subtract from" sid="822334972623023" type="EvilMushrooms">
                                             <param id="0" name="Instance variable">HP</param>
-                                            <param id="1" name="Value">floor(5 * WarriorTato.Strength/EvilMushrooms.Defense)</param>
+                                            <param id="1" name="Value">floor(5 * WarriorTato.Strength/EvilMushrooms.Defense + 0.5)</param>
                                         </action>
                                         <action id="0" name="Spawn another object" sid="458004003396844" type="EvilMushrooms">
                                             <param id="0" name="Object">DamageText</param>
@@ -1037,7 +1037,7 @@
                                             <param id="2" name="Image point">2</param>
                                         </action>
                                         <action id="0" name="Set text" sid="898948740257116" type="DamageText">
-                                            <param id="0" name="Text">floor(5 * WarriorTato.Strength/EvilMushrooms.Defense)</param>
+                                            <param id="0" name="Text">floor(5 * WarriorTato.Strength/EvilMushrooms.Defense + 0.5)</param>
                                         </action>
                                         <action id="-9" name="Set value" sid="650538690724685" type="System">
                                             <param id="0" name="Variable">processing</param>
