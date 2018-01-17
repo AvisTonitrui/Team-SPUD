@@ -290,6 +290,9 @@
                                 <action id="-15" name="Set visible" sid="906598331535106" type="Run">
                                     <param id="0" name="Visibility">1</param>
                                 </action>
+                                <action id="4" name="Set font color" sid="774838619723090" type="SweetText">
+                                    <param id="0" name="Color">rgb(255, 255, 255)</param>
+                                </action>
                             </actions>
                         </event-block>
                         <comment>the controls for processing Sweet Tatos turn</comment>
@@ -508,9 +511,73 @@
                                         <condition id="0" name="On key pressed" sid="117247183610584" type="Keyboard">
                                             <param id="0" name="Key">27 (Esc)</param>
                                         </condition>
+                                        <condition id="-14" name="Compare variable" sid="540258550014023" type="System">
+                                            <param id="0" name="Variable">processing</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">3</param>
+                                        </condition>
                                     </conditions>
                                     <actions>
                                         <action id="-9" name="Set value" sid="373480529528829" type="System">
+                                            <param id="0" name="Variable">processing</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                        <event-group description="" sid="227070667943551" title="Medic!">
+                            <sub-events>
+                                <event-block sid="310004148528376">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="473529259595013" type="System">
+                                            <param id="0" name="Variable">processing</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">4</param>
+                                        </condition>
+                                        <condition id="7" name="Cursor is over object" sid="679193198148094" type="Mouse">
+                                            <param id="0" name="Object">Heroes</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Spawn another object" sid="477884525718187" type="Heroes">
+                                            <param id="0" name="Object">highlight</param>
+                                            <param id="1" name="Layer">0</param>
+                                            <param id="2" name="Image point">1</param>
+                                        </action>
+                                        <action id="-8" name="Set angle" sid="816239032360801" type="highlight">
+                                            <param id="0" name="Angle">90</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="216836076173903">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="579987247076869" type="System">
+                                            <param id="0" name="Variable">processing</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">4</param>
+                                        </condition>
+                                        <condition id="7" inverted="1" name="Cursor is over object" sid="977705794321136" type="Mouse">
+                                            <param id="0" name="Object">Heroes</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="581823965728856" type="highlight" />
+                                    </actions>
+                                </event-block>
+                                <event-block sid="649060683806991">
+                                    <conditions>
+                                        <condition id="0" name="On key pressed" sid="976865391693864" type="Keyboard">
+                                            <param id="0" name="Key">27 (Esc)</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="432302276117550" type="System">
+                                            <param id="0" name="Variable">processing</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">4</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="633250157135591" type="System">
                                             <param id="0" name="Variable">processing</param>
                                             <param id="1" name="Value">1</param>
                                         </action>
