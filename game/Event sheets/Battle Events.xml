@@ -101,7 +101,7 @@
                 <event-block sid="731094375363649">
                     <conditions>
                         <condition id="-7" name="Compare instance variable" sid="493474874816159" type="WarriorTato">
-                            <param id="0" name="Instance variable">HP</param>
+                            <param id="0" name="Instance variable">CurrentHP</param>
                             <param id="1" name="Comparison">5</param>
                             <param id="2" name="Value">100</param>
                         </condition>
@@ -149,6 +149,7 @@
                             </conditions>
                             <actions />
                             <sub-events>
+                                <comment>each mushroom gets a target and assigns damage.</comment>
                                 <event-block sid="689724217559483">
                                     <conditions>
                                         <condition id="-11" name="For Each" sid="882860555645838" type="System">
@@ -172,7 +173,7 @@
                                             </conditions>
                                             <actions>
                                                 <action id="-12" name="Subtract from" sid="723647252527557" type="SweetTato">
-                                                    <param id="0" name="Instance variable">HP</param>
+                                                    <param id="0" name="Instance variable">CurrentHP</param>
                                                     <param id="1" name="Value">5 * EvilMushrooms.Strength/SweetTato.Defense</param>
                                                 </action>
                                             </actions>
@@ -187,7 +188,7 @@
                                             </conditions>
                                             <actions>
                                                 <action id="-12" name="Subtract from" sid="156680776492833" type="WarriorTato">
-                                                    <param id="0" name="Instance variable">HP</param>
+                                                    <param id="0" name="Instance variable">CurrentHP</param>
                                                     <param id="1" name="Value">5 * EvilMushrooms.Strength/WarriorTato.Defense</param>
                                                 </action>
                                             </actions>
@@ -202,7 +203,7 @@
                                             </conditions>
                                             <actions>
                                                 <action id="-12" name="Subtract from" sid="741761656153916" type="WizardTato">
-                                                    <param id="0" name="Instance variable">HP</param>
+                                                    <param id="0" name="Instance variable">CurrentHP</param>
                                                     <param id="1" name="Value">5 * EvilMushrooms.Strength/WizardTato.Defense</param>
                                                 </action>
                                             </actions>
@@ -213,6 +214,39 @@
                         </event-block>
                     </sub-events>
                 </event-group>
+                <comment>health bar checks</comment>
+                <event-block sid="507523529731833">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="686476133708079" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-5" name="Set width" sid="463043528772801" type="SweetHP">
+                            <param id="0" name="Width">SweetTato.CurrentHP / SweetTato.MaxHP * 250</param>
+                        </action>
+                        <action id="-5" name="Set width" sid="870356300223431" type="WarriorHP">
+                            <param id="0" name="Width">WarriorTato.CurrentHP / WarriorTato.MaxHP * 250</param>
+                        </action>
+                        <action id="-5" name="Set width" sid="847589560658950" type="WizardHP">
+                            <param id="0" name="Width">WizardTato.CurrentHP / WizardTato.MaxHP * 250</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-group description="" sid="689648674346564" title="Sweet Tato Turn">
+                    <sub-events>
+                        <event-block sid="202183036770791">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="426706626321344" type="System">
+                                    <param id="0" name="Variable">sweetTurn</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="594668104062961" title="Warrior Tato Turn" />
+                <event-group description="" sid="813053396190060" title="Wizard Tato Turn" />
             </sub-events>
         </event-group>
     </events>

@@ -57,8 +57,10 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <HP>40</HP>
-                        <MP>50</MP>
+                        <MaxHP>40</MaxHP>
+                        <CurrentHP>40</CurrentHP>
+                        <MaxMP>50</MaxMP>
+                        <CurrentMP>50</CurrentMP>
                         <Strength>2</Strength>
                         <Magic>2</Magic>
                         <Defense>1</Defense>
@@ -89,8 +91,10 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <HP>70</HP>
-                        <MP>1</MP>
+                        <MaxHP>70</MaxHP>
+                        <CurrentHP>70</CurrentHP>
+                        <MaxMP>1</MaxMP>
+                        <CurrentMP>0</CurrentMP>
                         <Strength>4</Strength>
                         <Magic>0</Magic>
                         <Defense>4</Defense>
@@ -121,8 +125,10 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <HP>40</HP>
-                        <MP>70</MP>
+                        <MaxHP>40</MaxHP>
+                        <CurrentHP>40</CurrentHP>
+                        <MaxMP>70</MaxMP>
+                        <CurrentMP>70</CurrentMP>
                         <Strength>2</Strength>
                         <Magic>4</Magic>
                         <Defense>2</Defense>
@@ -677,7 +683,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite" uid="30">
+                <instance type="Bag" uid="30">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>

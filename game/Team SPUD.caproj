@@ -59,8 +59,10 @@
         <object-type name="SweetTato" sid="789456639178210">
             <plugin id="Sprite" />
             <instance-variables>
-                <instance-variable name="HP" sid="618373868799026" type="number" />
-                <instance-variable name="MP" sid="375584695913409" type="number" />
+                <instance-variable name="MaxHP" sid="772058180491360" type="number" />
+                <instance-variable name="CurrentHP" sid="618373868799026" type="number" />
+                <instance-variable name="MaxMP" sid="375584695913409" type="number" />
+                <instance-variable name="CurrentMP" sid="937772921847273" type="number" />
                 <instance-variable name="Strength" sid="152893126850653" type="number" />
                 <instance-variable name="Magic" sid="993636519457887" type="number" />
                 <instance-variable name="Defense" sid="298038759630911" type="number" />
@@ -88,8 +90,10 @@
         <object-type name="WarriorTato" sid="414280337171525">
             <plugin id="Sprite" />
             <instance-variables>
-                <instance-variable name="HP" sid="270139701791532" type="number" />
-                <instance-variable name="MP" sid="647982776390409" type="number" />
+                <instance-variable name="MaxHP" sid="230967599835799" type="number" />
+                <instance-variable name="CurrentHP" sid="270139701791532" type="number" />
+                <instance-variable name="MaxMP" sid="647982776390409" type="number" />
+                <instance-variable name="CurrentMP" sid="692179979460920" type="number" />
                 <instance-variable name="Strength" sid="701044966427846" type="number" />
                 <instance-variable name="Magic" sid="454576957306295" type="number" />
                 <instance-variable name="Defense" sid="544655688806887" type="number" />
@@ -117,8 +121,10 @@
         <object-type name="WizardTato" sid="550772430456940">
             <plugin id="Sprite" />
             <instance-variables>
-                <instance-variable name="HP" sid="106938188789274" type="number" />
-                <instance-variable name="MP" sid="585136172403514" type="number" />
+                <instance-variable name="MaxHP" sid="873768552594681" type="number" />
+                <instance-variable name="CurrentHP" sid="106938188789274" type="number" />
+                <instance-variable name="MaxMP" sid="414345759577771" type="number" />
+                <instance-variable name="CurrentMP" sid="585136172403514" type="number" />
                 <instance-variable name="Strength" sid="291477907090198" type="number" />
                 <instance-variable name="Magic" sid="369864082309822" type="number" />
                 <instance-variable name="Defense" sid="855198572478663" type="number" />
@@ -320,7 +326,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite" sid="328615865373465">
+        <object-type name="Bag" sid="328615865373465">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="667408655598810" speed="5">
