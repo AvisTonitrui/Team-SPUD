@@ -368,7 +368,10 @@
                                 <action id="0" name="Spawn another object" sid="429695398830355" type="EvilMushrooms">
                                     <param id="0" name="Object">highlight</param>
                                     <param id="1" name="Layer">0</param>
-                                    <param id="2" name="Image point">0</param>
+                                    <param id="2" name="Image point">1</param>
+                                </action>
+                                <action id="-8" name="Set angle" sid="711011359969488" type="highlight">
+                                    <param id="0" name="Angle">90</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -384,7 +387,7 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-9" name="Destroy" sid="846732768922464" type="highlight" />
+                                <action id="-9" name="Destroy" sid="897217395443392" type="highlight" />
                             </actions>
                         </event-block>
                     </sub-events>
