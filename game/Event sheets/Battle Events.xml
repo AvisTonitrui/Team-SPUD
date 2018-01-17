@@ -224,8 +224,8 @@
                                             <conditions>
                                                 <condition id="-7" name="Compare instance variable" sid="109443314765981" type="EvilMushrooms">
                                                     <param id="0" name="Instance variable">target</param>
-                                                    <param id="1" name="Comparison">0</param>
-                                                    <param id="2" name="Value">0</param>
+                                                    <param id="1" name="Comparison">3</param>
+                                                    <param id="2" name="Value">2</param>
                                                 </condition>
                                             </conditions>
                                             <actions>
@@ -248,7 +248,7 @@
                                                 <condition id="-7" name="Compare instance variable" sid="144758784799501" type="EvilMushrooms">
                                                     <param id="0" name="Instance variable">target</param>
                                                     <param id="1" name="Comparison">3</param>
-                                                    <param id="2" name="Value">3</param>
+                                                    <param id="2" name="Value">4</param>
                                                 </condition>
                                             </conditions>
                                             <actions>
@@ -1443,7 +1443,7 @@
                                     <actions>
                                         <action id="-12" name="Subtract from" sid="468477793710540" type="EvilMushrooms">
                                             <param id="0" name="Instance variable">HP</param>
-                                            <param id="1" name="Value">floor(10 * WizardTato.Strength/EvilMushrooms.Defense)</param>
+                                            <param id="1" name="Value">floor(10 * WizardTato.Magic/EvilMushrooms.MagicResist)</param>
                                         </action>
                                         <action id="0" name="Spawn another object" sid="334284858535358" type="EvilMushrooms">
                                             <param id="0" name="Object">DamageText</param>
@@ -1451,7 +1451,7 @@
                                             <param id="2" name="Image point">2</param>
                                         </action>
                                         <action id="0" name="Set text" sid="905212764193060" type="DamageText">
-                                            <param id="0" name="Text">floor(10 * WizardTato.Strength/EvilMushrooms.Defense)</param>
+                                            <param id="0" name="Text">floor(10 * WizardTato.Magic/EvilMushrooms.MagicResist)</param>
                                         </action>
                                         <action id="-12" name="Subtract from" sid="994111961913582" type="WizardTato">
                                             <param id="0" name="Instance variable">CurrentMP</param>
