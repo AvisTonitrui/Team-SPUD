@@ -54,7 +54,7 @@
         <object-type name="Audio" sid="2722091819329769">
             <plugin id="Audio" />
         </object-type>
-        <object-type name="Sprite" sid="789456639178210">
+        <object-type name="SweetTato" sid="789456639178210">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="176519042636353" speed="5">
@@ -73,7 +73,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite2" sid="414280337171525">
+        <object-type name="WarriorTato" sid="414280337171525">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="299305509064794" speed="5">
@@ -92,7 +92,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite3" sid="550772430456940">
+        <object-type name="WizardTato" sid="550772430456940">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="908484787678886" speed="5">
@@ -111,7 +111,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite4" sid="800301144967597">
+        <object-type name="EvilMushrooms" sid="800301144967597">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="8" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="387498721736803" speed="8">
@@ -134,11 +134,11 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="TiledBackground" sid="158308900173642">
+        <object-type name="Grass" sid="158308900173642">
             <plugin id="TiledBg" />
             <texture original-source="D:\GitHub Repos\Team-SPUD\assets\Grass.png" />
         </object-type>
-        <object-type name="Sprite6" sid="434540880822379">
+        <object-type name="MenuBacking" sid="434540880822379">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="486478629990395" speed="5">
@@ -146,7 +146,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite7" sid="359526737546681">
+        <object-type name="MenuBorder" sid="359526737546681">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="849936157949584" speed="5">
