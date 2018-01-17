@@ -58,8 +58,6 @@
         <object-type name="SweetTato" sid="789456639178210">
             <plugin id="Sprite" />
             <instance-variables>
-                <instance-variable name="MaxHP" sid="772058180491360" type="number" />
-                <instance-variable name="CurrentHP" sid="618373868799026" type="number" />
                 <instance-variable name="MaxMP" sid="375584695913409" type="number" />
                 <instance-variable name="CurrentMP" sid="937772921847273" type="number" />
                 <instance-variable name="Strength" sid="152893126850653" type="number" />
@@ -90,8 +88,6 @@
         <object-type name="WarriorTato" sid="414280337171525">
             <plugin id="Sprite" />
             <instance-variables>
-                <instance-variable name="MaxHP" sid="230967599835799" type="number" />
-                <instance-variable name="CurrentHP" sid="270139701791532" type="number" />
                 <instance-variable name="MaxMP" sid="647982776390409" type="number" />
                 <instance-variable name="CurrentMP" sid="692179979460920" type="number" />
                 <instance-variable name="Strength" sid="701044966427846" type="number" />
@@ -122,8 +118,6 @@
         <object-type name="WizardTato" sid="550772430456940">
             <plugin id="Sprite" />
             <instance-variables>
-                <instance-variable name="MaxHP" sid="873768552594681" type="number" />
-                <instance-variable name="CurrentHP" sid="106938188789274" type="number" />
                 <instance-variable name="MaxMP" sid="414345759577771" type="number" />
                 <instance-variable name="CurrentMP" sid="585136172403514" type="number" />
                 <instance-variable name="Strength" sid="291477907090198" type="number" />
@@ -404,6 +398,10 @@
                 <member>WarriorTato</member>
                 <member>WizardTato</member>
             </members>
+            <instance-variables>
+                <instance-variable name="MaxHP" sid="130045784761625" type="number" />
+                <instance-variable name="CurrentHP" sid="850059427118294" type="number" />
+            </instance-variables>
         </family>
     </families>
     <layout-folder>

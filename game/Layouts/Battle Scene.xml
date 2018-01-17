@@ -57,8 +57,8 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <MaxHP>40</MaxHP>
-                        <CurrentHP>40</CurrentHP>
+                        <MaxHP>0</MaxHP>
+                        <CurrentHP>0</CurrentHP>
                         <MaxMP>50</MaxMP>
                         <CurrentMP>50</CurrentMP>
                         <Strength>2</Strength>
@@ -91,8 +91,8 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <MaxHP>70</MaxHP>
-                        <CurrentHP>70</CurrentHP>
+                        <MaxHP>0</MaxHP>
+                        <CurrentHP>0</CurrentHP>
                         <MaxMP>1</MaxMP>
                         <CurrentMP>0</CurrentMP>
                         <Strength>4</Strength>
@@ -125,8 +125,8 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <MaxHP>40</MaxHP>
-                        <CurrentHP>40</CurrentHP>
+                        <MaxHP>0</MaxHP>
+                        <CurrentHP>0</CurrentHP>
                         <MaxMP>70</MaxMP>
                         <CurrentMP>70</CurrentMP>
                         <Strength>2</Strength>
