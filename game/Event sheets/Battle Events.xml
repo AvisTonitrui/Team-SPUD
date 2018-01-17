@@ -394,10 +394,6 @@
                         <comment>the controls for processing Sweet Tatos turn</comment>
                         <event-block sid="249512602524420">
                             <conditions>
-                                <condition id="0" name="On click" sid="669587514902964" type="Mouse">
-                                    <param id="0" name="Mouse button">0</param>
-                                    <param id="1" name="Click type">0</param>
-                                </condition>
                                 <condition id="-14" name="Compare variable" sid="298410759704934" type="System">
                                     <param id="0" name="Variable">processing</param>
                                     <param id="1" name="Comparison">0</param>
@@ -407,38 +403,44 @@
                             <actions />
                             <sub-events>
                                 <comment>open the unfinished bag</comment>
-                                <event-block sid="156567618943747">
+                                <event-block sid="843389401119010">
                                     <conditions>
-                                        <condition id="7" name="Cursor is over object" sid="617521863995029" type="Mouse">
-                                            <param id="0" name="Object">Bag</param>
+                                        <condition id="6" name="On object clicked" sid="631924322760984" type="Mouse">
+                                            <param id="0" name="Mouse button">0</param>
+                                            <param id="1" name="Click type">0</param>
+                                            <param id="2" name="Object clicked">Bag</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-9" name="Set value" sid="993334383686798" type="System">
+                                        <action id="-9" name="Set value" sid="850402121288954" type="System">
                                             <param id="0" name="Variable">processing</param>
-                                            <param id="1" name="Value">2</param>
+                                            <param id="1" name="Value">9</param>
                                         </action>
                                     </actions>
                                 </event-block>
                                 <comment>allow for targeting for a basic attack (5 power)</comment>
-                                <event-block sid="689532660868924">
+                                <event-block sid="259544724372160">
                                     <conditions>
-                                        <condition id="7" name="Cursor is over object" sid="904473198481544" type="Mouse">
-                                            <param id="0" name="Object">Fight</param>
+                                        <condition id="6" name="On object clicked" sid="393054076302456" type="Mouse">
+                                            <param id="0" name="Mouse button">0</param>
+                                            <param id="1" name="Click type">0</param>
+                                            <param id="2" name="Object clicked">Fight</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-9" name="Set value" sid="721861477693020" type="System">
+                                        <action id="-9" name="Set value" sid="641719815602925" type="System">
                                             <param id="0" name="Variable">processing</param>
-                                            <param id="1" name="Value">3</param>
+                                            <param id="1" name="Value">10</param>
                                         </action>
                                     </actions>
                                 </event-block>
                                 <comment>allow for targeting for a heal (5 hp)</comment>
                                 <event-block sid="923407942663409">
                                     <conditions>
-                                        <condition id="7" name="Cursor is over object" sid="943303573918760" type="Mouse">
-                                            <param id="0" name="Object">Heal</param>
+                                        <condition id="6" name="On object clicked" sid="943303573918760" type="Mouse">
+                                            <param id="0" name="Mouse button">0</param>
+                                            <param id="1" name="Click type">0</param>
+                                            <param id="2" name="Object clicked">Heal</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -451,8 +453,10 @@
                                 <comment>automatically loses the fight</comment>
                                 <event-block sid="870478747898715">
                                     <conditions>
-                                        <condition id="7" name="Cursor is over object" sid="174837221421737" type="Mouse">
-                                            <param id="0" name="Object">Run</param>
+                                        <condition id="6" name="On object clicked" sid="174837221421737" type="Mouse">
+                                            <param id="0" name="Mouse button">0</param>
+                                            <param id="1" name="Click type">0</param>
+                                            <param id="2" name="Object clicked">Run</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -856,10 +860,6 @@
                         <comment>the controls for processing Warrior Tatos turn</comment>
                         <event-block sid="510890320937599">
                             <conditions>
-                                <condition id="0" name="On click" sid="722407437526082" type="Mouse">
-                                    <param id="0" name="Mouse button">0</param>
-                                    <param id="1" name="Click type">0</param>
-                                </condition>
                                 <condition id="-14" name="Compare variable" sid="235093769419107" type="System">
                                     <param id="0" name="Variable">processing</param>
                                     <param id="1" name="Comparison">0</param>
@@ -869,38 +869,44 @@
                             <actions />
                             <sub-events>
                                 <comment>open the unfinished bag</comment>
-                                <event-block sid="989701779087797">
+                                <event-block sid="609685544447794">
                                     <conditions>
-                                        <condition id="7" name="Cursor is over object" sid="349609613352999" type="Mouse">
-                                            <param id="0" name="Object">Bag</param>
+                                        <condition id="6" name="On object clicked" sid="325171848727429" type="Mouse">
+                                            <param id="0" name="Mouse button">0</param>
+                                            <param id="1" name="Click type">0</param>
+                                            <param id="2" name="Object clicked">Bag</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-9" name="Set value" sid="734583473827544" type="System">
+                                        <action id="-9" name="Set value" sid="226751255891431" type="System">
                                             <param id="0" name="Variable">processing</param>
-                                            <param id="1" name="Value">6</param>
+                                            <param id="1" name="Value">9</param>
                                         </action>
                                     </actions>
                                 </event-block>
                                 <comment>allow for targeting for a basic attack (5 power)</comment>
-                                <event-block sid="217606760161551">
+                                <event-block sid="813160744292049">
                                     <conditions>
-                                        <condition id="7" name="Cursor is over object" sid="908085965957647" type="Mouse">
-                                            <param id="0" name="Object">Fight</param>
+                                        <condition id="6" name="On object clicked" sid="802354316515022" type="Mouse">
+                                            <param id="0" name="Mouse button">0</param>
+                                            <param id="1" name="Click type">0</param>
+                                            <param id="2" name="Object clicked">Fight</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-9" name="Set value" sid="718190826299595" type="System">
+                                        <action id="-9" name="Set value" sid="311433392394197" type="System">
                                             <param id="0" name="Variable">processing</param>
-                                            <param id="1" name="Value">7</param>
+                                            <param id="1" name="Value">10</param>
                                         </action>
                                     </actions>
                                 </event-block>
                                 <comment>automatically loses the fight</comment>
                                 <event-block sid="263863488111250">
                                     <conditions>
-                                        <condition id="7" name="Cursor is over object" sid="551917116735330" type="Mouse">
-                                            <param id="0" name="Object">Run</param>
+                                        <condition id="6" name="On object clicked" sid="551917116735330" type="Mouse">
+                                            <param id="0" name="Mouse button">0</param>
+                                            <param id="1" name="Click type">0</param>
+                                            <param id="2" name="Object clicked">Run</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -1156,10 +1162,6 @@
                         <comment>the controls for processing Warrior Tatos turn</comment>
                         <event-block sid="891291103719777">
                             <conditions>
-                                <condition id="0" name="On click" sid="436834225089458" type="Mouse">
-                                    <param id="0" name="Mouse button">0</param>
-                                    <param id="1" name="Click type">0</param>
-                                </condition>
                                 <condition id="-14" name="Compare variable" sid="955182786555034" type="System">
                                     <param id="0" name="Variable">processing</param>
                                     <param id="1" name="Comparison">0</param>
@@ -1171,8 +1173,10 @@
                                 <comment>open the unfinished bag</comment>
                                 <event-block sid="342176804897213">
                                     <conditions>
-                                        <condition id="7" name="Cursor is over object" sid="682945449237120" type="Mouse">
-                                            <param id="0" name="Object">Bag</param>
+                                        <condition id="6" name="On object clicked" sid="682945449237120" type="Mouse">
+                                            <param id="0" name="Mouse button">0</param>
+                                            <param id="1" name="Click type">0</param>
+                                            <param id="2" name="Object clicked">Bag</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -1185,8 +1189,10 @@
                                 <comment>allow for targeting for a basic attack (5 power)</comment>
                                 <event-block sid="817474896726286">
                                     <conditions>
-                                        <condition id="7" name="Cursor is over object" sid="118833466825647" type="Mouse">
-                                            <param id="0" name="Object">Fight</param>
+                                        <condition id="6" name="On object clicked" sid="118833466825647" type="Mouse">
+                                            <param id="0" name="Mouse button">0</param>
+                                            <param id="1" name="Click type">0</param>
+                                            <param id="2" name="Object clicked">Fight</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -1199,8 +1205,10 @@
                                 <comment>allows for the targeting of salt smack</comment>
                                 <event-block sid="632846458655379">
                                     <conditions>
-                                        <condition id="7" name="Cursor is over object" sid="768151392697170" type="Mouse">
-                                            <param id="0" name="Object">SaltSmack</param>
+                                        <condition id="6" name="On object clicked" sid="768151392697170" type="Mouse">
+                                            <param id="0" name="Mouse button">0</param>
+                                            <param id="1" name="Click type">0</param>
+                                            <param id="2" name="Object clicked">SaltSmack</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -1213,8 +1221,10 @@
                                 <comment>automatically loses the fight</comment>
                                 <event-block sid="561062874104543">
                                     <conditions>
-                                        <condition id="7" name="Cursor is over object" sid="850008189575365" type="Mouse">
-                                            <param id="0" name="Object">Run</param>
+                                        <condition id="6" name="On object clicked" sid="850008189575365" type="Mouse">
+                                            <param id="0" name="Mouse button">0</param>
+                                            <param id="1" name="Click type">0</param>
+                                            <param id="2" name="Object clicked">Run</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -1541,6 +1551,24 @@
                                             </sub-events>
                                         </event-block>
                                     </sub-events>
+                                </event-block>
+                                <event-block sid="185774492882088">
+                                    <conditions>
+                                        <condition id="0" name="On key pressed" sid="711346753953615" type="Keyboard">
+                                            <param id="0" name="Key">27 (Esc)</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="409225259338348" type="System">
+                                            <param id="0" name="Variable">processing</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">11</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="106963249852217" type="System">
+                                            <param id="0" name="Variable">processing</param>
+                                            <param id="1" name="Value">8</param>
+                                        </action>
+                                    </actions>
                                 </event-block>
                             </sub-events>
                         </event-group>
