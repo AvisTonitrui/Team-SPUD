@@ -1089,7 +1089,7 @@
                                     <actions>
                                         <action id="-12" name="Subtract from" sid="822334972623023" type="EvilMushrooms">
                                             <param id="0" name="Instance variable">HP</param>
-                                            <param id="1" name="Value">int(5 * WarriorTato.Strength/EvilMushrooms.Defense + 0.5)</param>
+                                            <param id="1" name="Value">int(5 * WarriorTato.Strength/EvilMushrooms.Defense)</param>
                                         </action>
                                         <action id="0" name="Spawn another object" sid="458004003396844" type="EvilMushrooms">
                                             <param id="0" name="Object">DamageText</param>
@@ -1097,7 +1097,7 @@
                                             <param id="2" name="Image point">2</param>
                                         </action>
                                         <action id="0" name="Set text" sid="898948740257116" type="DamageText">
-                                            <param id="0" name="Text">int(5 * WarriorTato.Strength/EvilMushrooms.Defense + 0.5)</param>
+                                            <param id="0" name="Text">int(5 * WarriorTato.Strength/EvilMushrooms.Defense)</param>
                                         </action>
                                         <action id="-9" name="Set value" sid="650538690724685" type="System">
                                             <param id="0" name="Variable">processing</param>
