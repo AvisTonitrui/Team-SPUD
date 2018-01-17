@@ -62,7 +62,7 @@
                         <MaxMP>50</MaxMP>
                         <CurrentMP>50</CurrentMP>
                         <Strength>2</Strength>
-                        <Magic>2</Magic>
+                        <Magic>3</Magic>
                         <Defense>1</Defense>
                         <MagicResist>3</MagicResist>
                         <Speed>6</Speed>
