@@ -323,6 +323,21 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Sprite" sid="328615865373465">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="667408655598810" speed="5">
+                    <frame duration="1" hotspotX="0.547619" hotspotY="0.468085" original-source="D:\GitHub Repos\Team-SPUD\assets\Bag_Text.png">
+                        <collision-poly>
+                            <point x="0.547619" y="0.255319" />
+                            <point x="0.940476" y="0.468085" />
+                            <point x="0.547619" y="0.744681" />
+                            <point x="0.0595238" y="0.468085" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
