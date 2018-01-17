@@ -216,7 +216,7 @@
                                     <actions>
                                         <action id="-10" name="Set value" sid="278676525233577" type="EvilMushrooms">
                                             <param id="0" name="Instance variable">target</param>
-                                            <param id="1" name="Value">random(3)</param>
+                                            <param id="1" name="Value">random(6)</param>
                                         </action>
                                     </actions>
                                     <sub-events>
@@ -231,7 +231,15 @@
                                             <actions>
                                                 <action id="-12" name="Subtract from" sid="667728088081810" type="SweetTato">
                                                     <param id="0" name="Instance variable">CurrentHP</param>
-                                                    <param id="1" name="Value">5 * EvilMushrooms.Strength / SweetTato.Defense</param>
+                                                    <param id="1" name="Value">floor(5 * EvilMushrooms.Strength / SweetTato.Defense)</param>
+                                                </action>
+                                                <action id="0" name="Spawn another object" sid="396679164990627" type="SweetTato">
+                                                    <param id="0" name="Object">DamageText</param>
+                                                    <param id="1" name="Layer">0</param>
+                                                    <param id="2" name="Image point">2</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="193665238298462" type="DamageText">
+                                                    <param id="0" name="Text">floor(5 * EvilMushrooms.Strength / SweetTato.Defense)</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -239,14 +247,22 @@
                                             <conditions>
                                                 <condition id="-7" name="Compare instance variable" sid="144758784799501" type="EvilMushrooms">
                                                     <param id="0" name="Instance variable">target</param>
-                                                    <param id="1" name="Comparison">0</param>
-                                                    <param id="2" name="Value">1</param>
+                                                    <param id="1" name="Comparison">3</param>
+                                                    <param id="2" name="Value">3</param>
                                                 </condition>
                                             </conditions>
                                             <actions>
                                                 <action id="-12" name="Subtract from" sid="980658011301415" type="WarriorTato">
                                                     <param id="0" name="Instance variable">CurrentHP</param>
-                                                    <param id="1" name="Value">5 * EvilMushrooms.Strength / WarriorTato.Defense</param>
+                                                    <param id="1" name="Value">floor(5 * EvilMushrooms.Strength / WarriorTato.Defense)</param>
+                                                </action>
+                                                <action id="0" name="Spawn another object" sid="543696519612343" type="WarriorTato">
+                                                    <param id="0" name="Object">DamageText</param>
+                                                    <param id="1" name="Layer">0</param>
+                                                    <param id="2" name="Image point">2</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="320197645570586" type="DamageText">
+                                                    <param id="0" name="Text">floor(5 * EvilMushrooms.Strength / WarriorTato.Defense)</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -254,14 +270,22 @@
                                             <conditions>
                                                 <condition id="-7" name="Compare instance variable" sid="160654654390509" type="EvilMushrooms">
                                                     <param id="0" name="Instance variable">target</param>
-                                                    <param id="1" name="Comparison">5</param>
-                                                    <param id="2" name="Value">2</param>
+                                                    <param id="1" name="Comparison">3</param>
+                                                    <param id="2" name="Value">6</param>
                                                 </condition>
                                             </conditions>
                                             <actions>
                                                 <action id="-12" name="Subtract from" sid="835322029611220" type="WizardTato">
                                                     <param id="0" name="Instance variable">CurrentHP</param>
-                                                    <param id="1" name="Value">5 * EvilMushrooms.Strength / WizardTato.Defense</param>
+                                                    <param id="1" name="Value">floor(5 * EvilMushrooms.Strength / WizardTato.Defense)</param>
+                                                </action>
+                                                <action id="0" name="Spawn another object" sid="319115702054457" type="WizardTato">
+                                                    <param id="0" name="Object">DamageText</param>
+                                                    <param id="1" name="Layer">0</param>
+                                                    <param id="2" name="Image point">2</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="348974811581016" type="DamageText">
+                                                    <param id="0" name="Text">floor(5 * EvilMushrooms.Strength / WizardTato.Defense)</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -287,6 +311,30 @@
                             <param id="0" name="Width">WizardTato.CurrentHP / WizardTato.MaxHP * 250</param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="395901352199356">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="836414590228798" type="System">
+                                    <param id="0" name="Object">Heroes</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="411065698356035">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="654487806775723" type="Heroes">
+                                            <param id="0" name="Instance variable">CurrentHP</param>
+                                            <param id="1" name="Comparison">3</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="166486516910987" type="Heroes" />
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-group description="" sid="689648674346564" title="Sweet Tato Turn">
                     <sub-events>
@@ -545,6 +593,30 @@
                                             <param id="0" name="Color">rgb(0, 0, 0)</param>
                                         </action>
                                     </actions>
+                                    <sub-events>
+                                        <event-block sid="902576190715303">
+                                            <conditions>
+                                                <condition id="-11" name="For Each" sid="942114865814111" type="System">
+                                                    <param id="0" name="Object">EvilMushrooms</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions />
+                                            <sub-events>
+                                                <event-block sid="793494294063242">
+                                                    <conditions>
+                                                        <condition id="-7" name="Compare instance variable" sid="888423231263201" type="EvilMushrooms">
+                                                            <param id="0" name="Instance variable">HP</param>
+                                                            <param id="1" name="Comparison">3</param>
+                                                            <param id="2" name="Value">0</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-9" name="Destroy" sid="757734972034153" type="EvilMushrooms" />
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                                 <event-block sid="164518150555507">
                                     <conditions>
@@ -961,6 +1033,30 @@
                                             <param id="0" name="Color">rgb(0, 0, 0)</param>
                                         </action>
                                     </actions>
+                                    <sub-events>
+                                        <event-block sid="886313010181024">
+                                            <conditions>
+                                                <condition id="-11" name="For Each" sid="682423792723100" type="System">
+                                                    <param id="0" name="Object">EvilMushrooms</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions />
+                                            <sub-events>
+                                                <event-block sid="237992214076544">
+                                                    <conditions>
+                                                        <condition id="-7" name="Compare instance variable" sid="178968696164836" type="EvilMushrooms">
+                                                            <param id="0" name="Instance variable">HP</param>
+                                                            <param id="1" name="Comparison">3</param>
+                                                            <param id="2" name="Value">0</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-9" name="Destroy" sid="250325775261586" type="EvilMushrooms" />
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                                 <event-block sid="370677577130996">
                                     <conditions>
@@ -1241,6 +1337,30 @@
                                             <param id="0" name="Color">rgb(0, 0, 0)</param>
                                         </action>
                                     </actions>
+                                    <sub-events>
+                                        <event-block sid="284657467072137">
+                                            <conditions>
+                                                <condition id="-11" name="For Each" sid="655158273167689" type="System">
+                                                    <param id="0" name="Object">EvilMushrooms</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions />
+                                            <sub-events>
+                                                <event-block sid="216009537402846">
+                                                    <conditions>
+                                                        <condition id="-7" name="Compare instance variable" sid="350457254433053" type="EvilMushrooms">
+                                                            <param id="0" name="Instance variable">HP</param>
+                                                            <param id="1" name="Comparison">3</param>
+                                                            <param id="2" name="Value">0</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-9" name="Destroy" sid="572763351809514" type="EvilMushrooms" />
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                                 <event-block sid="497035054240158">
                                     <conditions>
@@ -1334,7 +1454,7 @@
                                             <param id="0" name="Text">floor(10 * WizardTato.Strength/EvilMushrooms.Defense)</param>
                                         </action>
                                         <action id="-12" name="Subtract from" sid="994111961913582" type="WizardTato">
-                                            <param id="0" name="Instance variable">MaxMP</param>
+                                            <param id="0" name="Instance variable">CurrentMP</param>
                                             <param id="1" name="Value">5</param>
                                         </action>
                                         <action id="-5" name="Set width" sid="616077320313407" type="WizardMP">
@@ -1361,11 +1481,70 @@
                                             <param id="0" name="Color">rgb(0, 0, 0)</param>
                                         </action>
                                     </actions>
+                                    <sub-events>
+                                        <event-block sid="920867864482386">
+                                            <conditions>
+                                                <condition id="-11" name="For Each" sid="312918971774381" type="System">
+                                                    <param id="0" name="Object">EvilMushrooms</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions />
+                                            <sub-events>
+                                                <event-block sid="404122659233015">
+                                                    <conditions>
+                                                        <condition id="-7" name="Compare instance variable" sid="334521528112326" type="EvilMushrooms">
+                                                            <param id="0" name="Instance variable">HP</param>
+                                                            <param id="1" name="Comparison">3</param>
+                                                            <param id="2" name="Value">0</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-9" name="Destroy" sid="135026953106363" type="EvilMushrooms" />
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                             </sub-events>
                         </event-group>
                     </sub-events>
                 </event-group>
+                <event-block sid="119088384332130">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="327961025788919" type="System">
+                            <param id="0" name="Variable">mushroomTurn</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="502226551000587" type="System">
+                            <param id="0" name="Variable">sweetTurn</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="718607482800666" type="System">
+                            <param id="0" name="Variable">warriorTurn</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="917111834762254" type="System">
+                            <param id="0" name="Variable">wizardTurn</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="707235959196598" type="System">
+                            <param id="0" name="Variable">processing</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="200500741735721" type="System">
+                            <param id="0" name="Variable">turn</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
         </event-group>
     </events>
