@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
     <name>Battle Scene</name>
-    <sid>384555897058958</sid>
-    <event-sheet>Battle Events</event-sheet>
+    <sid>4650502934421703</sid>
+    <event-sheet>Battle events</event-sheet>
     <size>
-        <width>1708</width>
-        <height>960</height>
+        <width>1280</width>
+        <height>1024</height>
     </size>
     <margins>
         <horizontal>500</horizontal>
@@ -13,7 +13,7 @@
     </margins>
     <unbounded-scrolling>0</unbounded-scrolling>
     <layers>
-        <layer name="Layer 0" sid="768401072407260">
+        <layer name="Layer 0" sid="6199299691916345">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>0</transparent>
@@ -39,8 +39,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>123</x>
-                        <y>274</y>
+                        <x>173</x>
+                        <y>303</y>
                         <z>0</z>
                         <width>64</width>
                         <height>64</height>
@@ -61,8 +61,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>216</x>
-                        <y>279</y>
+                        <x>284</x>
+                        <y>311</y>
                         <z>0</z>
                         <width>64</width>
                         <height>64</height>
@@ -83,8 +83,30 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>320</x>
-                        <y>280</y>
+                        <x>383</x>
+                        <y>311</y>
+                        <z>0</z>
+                        <width>64</width>
+                        <height>64</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Sprite4" uid="7">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>378</x>
+                        <y>151</y>
                         <z>0</z>
                         <width>64</width>
                         <height>64</height>
