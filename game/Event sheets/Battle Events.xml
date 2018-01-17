@@ -4,6 +4,7 @@
     <name>Battle events</name>
     <events>
         <variable constant="0" name="mushroomTurn" sid="596105872518273" static="0" type="number">0</variable>
+        <variable constant="0" name="processing" sid="609066199871933" static="0" type="number">0</variable>
         <variable constant="0" name="sweetTurn" sid="904024087559865" static="0" type="number">0</variable>
         <variable constant="0" name="turn" sid="752267141726709" static="0" type="number">0</variable>
         <variable constant="0" name="warriorTurn" sid="134007799685746" static="0" type="number">0</variable>
@@ -147,7 +148,12 @@
                                     <param id="2" name="Value">1</param>
                                 </condition>
                             </conditions>
-                            <actions />
+                            <actions>
+                                <action id="-9" name="Set value" sid="638055885916178" type="System">
+                                    <param id="0" name="Variable">mushroomTurn</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
                             <sub-events>
                                 <comment>each mushroom gets a target and assigns damage.</comment>
                                 <event-block sid="689724217559483">
@@ -160,6 +166,10 @@
                                         <action id="-10" name="Set value" sid="278676525233577" type="EvilMushrooms">
                                             <param id="0" name="Instance variable">target</param>
                                             <param id="1" name="Value">random(3)</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="996394890514573" type="EvilMushrooms">
+                                            <param id="0" name="Instance variable">timer</param>
+                                            <param id="1" name="Value">0</param>
                                         </action>
                                     </actions>
                                     <sub-events>
@@ -233,6 +243,7 @@
                 </event-block>
                 <event-group description="" sid="689648674346564" title="Sweet Tato Turn">
                     <sub-events>
+                        <comment>signal it is time to process Sweet Tatos turn</comment>
                         <event-block sid="202183036770791">
                             <conditions>
                                 <condition id="-14" name="Compare variable" sid="426706626321344" type="System">
@@ -240,8 +251,103 @@
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">1</param>
                                 </condition>
+                                <condition id="-14" name="Compare variable" sid="730834055239557" type="System">
+                                    <param id="0" name="Variable">processing</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="172059863345767" type="System">
+                                    <param id="0" name="Variable">processing</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="549048242050188" type="Bag">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="987538106275291" type="Fight">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="685477465728729" type="Heal">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="906598331535106" type="Run">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="592543289053866" type="System">
+                                    <param id="0" name="Variable">sweetTurn</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>the controls for processing Sweet Tatos turn</comment>
+                        <event-block sid="249512602524420">
+                            <conditions>
+                                <condition id="0" name="On click" sid="669587514902964" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="298410759704934" type="System">
+                                    <param id="0" name="Variable">processing</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
                             </conditions>
                             <actions />
+                            <sub-events>
+                                <event-block sid="156567618943747">
+                                    <conditions>
+                                        <condition id="7" name="Cursor is over object" sid="617521863995029" type="Mouse">
+                                            <param id="0" name="Object">Bag</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="993334383686798" type="System">
+                                            <param id="0" name="Variable">processing</param>
+                                            <param id="1" name="Value">2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="689532660868924">
+                                    <conditions>
+                                        <condition id="7" name="Cursor is over object" sid="904473198481544" type="Mouse">
+                                            <param id="0" name="Object">Fight</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="721861477693020" type="System">
+                                            <param id="0" name="Variable">processing</param>
+                                            <param id="1" name="Value">3</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="923407942663409">
+                                    <conditions>
+                                        <condition id="7" name="Cursor is over object" sid="943303573918760" type="Mouse">
+                                            <param id="0" name="Object">Heal</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="570508726754818" type="System">
+                                            <param id="0" name="Variable">processing</param>
+                                            <param id="1" name="Value">4</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="870478747898715">
+                                    <conditions>
+                                        <condition id="7" name="Cursor is over object" sid="174837221421737" type="Mouse">
+                                            <param id="0" name="Object">Run</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="753233550900275" type="System">
+                                            <param id="0" name="Variable">processing</param>
+                                            <param id="1" name="Value">5</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                     </sub-events>
                 </event-group>
