@@ -46,7 +46,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/WizardHP/" />
         <folder expanded="1" path="animation-folder/SweetMP/" />
         <folder expanded="1" path="animation-folder/WizardMP/" />
-        <folder expanded="1" path="animation-folder/WarriorMP/" />
         <folder expanded="1" path="animation-folder/Bag/" />
         <folder expanded="1" path="animation-folder/highlight/" />
         <folder expanded="1" path="animation-folder/inventory/" />

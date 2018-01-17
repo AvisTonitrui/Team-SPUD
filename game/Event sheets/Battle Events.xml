@@ -649,7 +649,41 @@
                                         <action id="4" name="Set font color" sid="132409751595537" type="SweetText">
                                             <param id="0" name="Color">rgb(0, 0, 0)</param>
                                         </action>
+                                        <action id="-12" name="Subtract from" sid="659615584031991" type="SweetTato">
+                                            <param id="0" name="Instance variable">CurrentMP</param>
+                                            <param id="1" name="Value">5</param>
+                                        </action>
+                                        <action id="-5" name="Set width" sid="297623062361959" type="SweetMP">
+                                            <param id="0" name="Width">SweetTato.CurrentMP / SweetTato.MaxMP * 100</param>
+                                        </action>
                                     </actions>
+                                    <sub-events>
+                                        <event-block sid="450190806599244">
+                                            <conditions>
+                                                <condition id="-11" name="For Each" sid="937960229676358" type="System">
+                                                    <param id="0" name="Object">Heroes</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions />
+                                            <sub-events>
+                                                <event-block sid="643975243917827">
+                                                    <conditions>
+                                                        <condition id="-7" name="Compare instance variable" sid="758539275479764" type="Heroes">
+                                                            <param id="0" name="Instance variable">CurrentHP</param>
+                                                            <param id="1" name="Comparison">4</param>
+                                                            <param id="2" name="Value">Heroes.MaxHP</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-10" name="Set value" sid="928617658516661" type="Heroes">
+                                                            <param id="0" name="Instance variable">CurrentHP</param>
+                                                            <param id="1" name="Value">Heroes.MaxHP</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                                 <event-block sid="649060683806991">
                                     <conditions>
@@ -923,6 +957,9 @@
                                         <action id="-15" name="Set visible" sid="258203427523456" type="Run">
                                             <param id="0" name="Visibility">0</param>
                                         </action>
+                                        <action id="4" name="Set font color" sid="460476695197248" type="WarriorText">
+                                            <param id="0" name="Color">rgb(0, 0, 0)</param>
+                                        </action>
                                     </actions>
                                 </event-block>
                                 <event-block sid="370677577130996">
@@ -947,7 +984,286 @@
                         </event-group>
                     </sub-events>
                 </event-group>
-                <event-group description="" sid="813053396190060" title="Wizard Tato Turn" />
+                <event-group description="" sid="813053396190060" title="Wizard Tato Turn">
+                    <sub-events>
+                        <comment>signal it is time to process Wizard Tatos turn</comment>
+                        <event-block sid="788222215999175">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="881943318042205" type="System">
+                                    <param id="0" name="Variable">wizardTurn</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="679971651939696" type="System">
+                                    <param id="0" name="Variable">processing</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="142561609720445" type="System">
+                                    <param id="0" name="Variable">processing</param>
+                                    <param id="1" name="Value">8</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="345440602250108" type="System">
+                                    <param id="0" name="Variable">wizardTurn</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="427361042091716" type="Bag">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="651526158974503" type="Fight">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="355937636729721" type="SaltSmack">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="279820578018903" type="Run">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="4" name="Set font color" sid="499370606008779" type="WizardText">
+                                    <param id="0" name="Color">rgb(255, 255, 255)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>the controls for processing Warrior Tatos turn</comment>
+                        <event-block sid="891291103719777">
+                            <conditions>
+                                <condition id="0" name="On click" sid="436834225089458" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="955182786555034" type="System">
+                                    <param id="0" name="Variable">processing</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">8</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <comment>open the unfinished bag</comment>
+                                <event-block sid="342176804897213">
+                                    <conditions>
+                                        <condition id="7" name="Cursor is over object" sid="682945449237120" type="Mouse">
+                                            <param id="0" name="Object">Bag</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="870572029221620" type="System">
+                                            <param id="0" name="Variable">processing</param>
+                                            <param id="1" name="Value">9</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <comment>allow for targeting for a basic attack (5 power)</comment>
+                                <event-block sid="817474896726286">
+                                    <conditions>
+                                        <condition id="7" name="Cursor is over object" sid="118833466825647" type="Mouse">
+                                            <param id="0" name="Object">Fight</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="384844419803057" type="System">
+                                            <param id="0" name="Variable">processing</param>
+                                            <param id="1" name="Value">10</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <comment>allows for the targeting of salt smack</comment>
+                                <event-block sid="632846458655379">
+                                    <conditions>
+                                        <condition id="7" name="Cursor is over object" sid="768151392697170" type="Mouse">
+                                            <param id="0" name="Object">SaltSmack</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="522000225717343" type="System">
+                                            <param id="0" name="Variable">processing</param>
+                                            <param id="1" name="Value">11</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <comment>automatically loses the fight</comment>
+                                <event-block sid="561062874104543">
+                                    <conditions>
+                                        <condition id="7" name="Cursor is over object" sid="850008189575365" type="Mouse">
+                                            <param id="0" name="Object">Run</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Go to layout" sid="842611593982533" type="System">
+                                            <param id="0" name="Layout">Loss Screen</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-group description="opens and closes inventory when prompted" sid="977985532774453" title="Inventory (Wizard)">
+                            <sub-events>
+                                <event-block sid="656741067123976">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="193033233998252" type="System">
+                                            <param id="0" name="Variable">processing</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">9</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="764161472257653" type="inventory">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="950746255627145" type="Exit">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="583108059666796" type="notFinished">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="398643196412581">
+                                    <conditions>
+                                        <condition id="0" name="On key pressed" sid="106161541530978" type="Keyboard">
+                                            <param id="0" name="Key">27 (Esc)</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="398198835359791" type="System">
+                                            <param id="0" name="Variable">processing</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">9</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="982276232501480" type="inventory">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="715384091510705" type="Exit">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="714292375729811" type="notFinished">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="219214925648575" type="System">
+                                            <param id="0" name="Variable">processing</param>
+                                            <param id="1" name="Value">8</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                        <event-group description="" sid="620721967908476" title="Fight (Wizard)">
+                            <sub-events>
+                                <event-group description="" sid="176619386978301" title="Enemy Highlighting (Wizard)">
+                                    <sub-events>
+                                        <event-block sid="745502973224687">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="493205235716668" type="System">
+                                                    <param id="0" name="Variable">processing</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">10</param>
+                                                </condition>
+                                                <condition id="7" name="Cursor is over object" sid="218487942659251" type="Mouse">
+                                                    <param id="0" name="Object">EvilMushrooms</param>
+                                                </condition>
+                                                <condition id="-4" name="Trigger once while true" sid="640216621982728" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Spawn another object" sid="804182919874467" type="EvilMushrooms">
+                                                    <param id="0" name="Object">highlight</param>
+                                                    <param id="1" name="Layer">0</param>
+                                                    <param id="2" name="Image point">1</param>
+                                                </action>
+                                                <action id="-8" name="Set angle" sid="205596278291881" type="highlight">
+                                                    <param id="0" name="Angle">90</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="944220652518165">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="724196367863667" type="System">
+                                                    <param id="0" name="Variable">processing</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">10</param>
+                                                </condition>
+                                                <condition id="7" inverted="1" name="Cursor is over object" sid="389691188675881" type="Mouse">
+                                                    <param id="0" name="Object">EvilMushrooms</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Destroy" sid="898892483279214" type="highlight" />
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-group>
+                                <comment>does the damage and show the damage number</comment>
+                                <event-block sid="680421064436967">
+                                    <conditions>
+                                        <condition id="6" name="On object clicked" sid="944493018506758" type="Mouse">
+                                            <param id="0" name="Mouse button">0</param>
+                                            <param id="1" name="Click type">0</param>
+                                            <param id="2" name="Object clicked">EvilMushrooms</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="936557703589446" type="System">
+                                            <param id="0" name="Variable">processing</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">10</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-12" name="Subtract from" sid="983722415661670" type="EvilMushrooms">
+                                            <param id="0" name="Instance variable">HP</param>
+                                            <param id="1" name="Value">floor(5 * WizardTato.Strength/EvilMushrooms.Defense)</param>
+                                        </action>
+                                        <action id="0" name="Spawn another object" sid="741260208294660" type="EvilMushrooms">
+                                            <param id="0" name="Object">DamageText</param>
+                                            <param id="1" name="Layer">0</param>
+                                            <param id="2" name="Image point">2</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="149421936529286" type="DamageText">
+                                            <param id="0" name="Text">floor(5 * WizardTato.Strength/EvilMushrooms.Defense)</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="881541256435915" type="System">
+                                            <param id="0" name="Variable">processing</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="-9" name="Destroy" sid="991000557910690" type="highlight" />
+                                        <action id="-15" name="Set visible" sid="827707655453491" type="Bag">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="854879856046096" type="Fight">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="332540028212139" type="SaltSmack">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="849893119968959" type="Run">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="4" name="Set font color" sid="885615969901634" type="WizardText">
+                                            <param id="0" name="Color">rgb(0, 0, 0)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="497035054240158">
+                                    <conditions>
+                                        <condition id="0" name="On key pressed" sid="898729779562901" type="Keyboard">
+                                            <param id="0" name="Key">27 (Esc)</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="268139041879300" type="System">
+                                            <param id="0" name="Variable">processing</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">10</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="137133580486125" type="System">
+                                            <param id="0" name="Variable">processing</param>
+                                            <param id="1" name="Value">8</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                    </sub-events>
+                </event-group>
             </sub-events>
         </event-group>
     </events>
