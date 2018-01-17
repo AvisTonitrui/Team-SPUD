@@ -63,7 +63,7 @@
                         <CurrentMP>50</CurrentMP>
                         <Strength>2</Strength>
                         <Magic>3</Magic>
-                        <Defense>1</Defense>
+                        <Defense>2</Defense>
                         <MagicResist>3</MagicResist>
                         <Speed>6</Speed>
                         <timer>0</timer>
