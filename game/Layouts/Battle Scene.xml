@@ -56,6 +56,15 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <Speed>6</Speed>
+                        <HP>40</HP>
+                        <MP>50</MP>
+                        <Strength>2</Strength>
+                        <Magic>2</Magic>
+                        <Defense>1</Defense>
+                        <MagicResist>3</MagicResist>
+                    </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -78,6 +87,15 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <Speed>4</Speed>
+                        <HP>70</HP>
+                        <MP>0</MP>
+                        <Strength>4</Strength>
+                        <Magic>0</Magic>
+                        <Defense>4</Defense>
+                        <MagicResist>1</MagicResist>
+                    </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -100,6 +118,15 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <Speed>4</Speed>
+                        <HP>40</HP>
+                        <MP>70</MP>
+                        <Strength>2</Strength>
+                        <Magic>4</Magic>
+                        <Defense>2</Defense>
+                        <MagicResist>2</MagicResist>
+                    </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -122,6 +149,15 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <Speed>5</Speed>
+                        <HP>50</HP>
+                        <MP>0</MP>
+                        <Strength>3</Strength>
+                        <Magic>0</Magic>
+                        <Defense>3</Defense>
+                        <MagicResist>1</MagicResist>
+                    </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -144,6 +180,15 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <Speed>5</Speed>
+                        <HP>50</HP>
+                        <MP>0</MP>
+                        <Strength>3</Strength>
+                        <Magic>0</Magic>
+                        <Defense>3</Defense>
+                        <MagicResist>1</MagicResist>
+                    </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -166,6 +211,15 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <Speed>5</Speed>
+                        <HP>50</HP>
+                        <MP>0</MP>
+                        <Strength>3</Strength>
+                        <Magic>0</Magic>
+                        <Defense>3</Defense>
+                        <MagicResist>1</MagicResist>
+                    </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
