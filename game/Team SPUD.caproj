@@ -385,6 +385,9 @@
         <object-type name="Exit" sid="633146542500060">
             <plugin id="Text" />
         </object-type>
+        <object-type name="Text" sid="618951112263179">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families>
         <family name="Heroes" plugin-id="Sprite" sid="652645014105799">
@@ -402,6 +405,7 @@
     <layout-folder>
         <layout>Battle Scene.xml</layout>
         <layout>Loss Screen.xml</layout>
+        <layout>Victory Screen.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Battle events.xml</event-sheet>

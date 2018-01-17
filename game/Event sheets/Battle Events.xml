@@ -1657,5 +1657,12 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <comment>victory condition</comment>
+        <event-block sid="492885518600238">
+            <conditions>
+                <condition id="-3" inverted="1" name="Is on-screen" sid="373657628517099" type="EvilMushrooms" />
+            </conditions>
+            <actions />
+        </event-block>
     </events>
 </c2eventsheet>
