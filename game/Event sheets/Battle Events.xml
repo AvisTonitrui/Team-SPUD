@@ -699,7 +699,7 @@
                                     <actions>
                                         <action id="-11" name="Add to" sid="408863737017268" type="Heroes">
                                             <param id="0" name="Instance variable">CurrentHP</param>
-                                            <param id="1" name="Value">SweetTato.Strength</param>
+                                            <param id="1" name="Value">SweetTato.Magic</param>
                                         </action>
                                         <action id="-9" name="Set value" sid="484354411243970" type="System">
                                             <param id="0" name="Variable">processing</param>
