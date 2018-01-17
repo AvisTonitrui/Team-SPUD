@@ -194,7 +194,7 @@
         <object-type name="Button" sid="645498383421091">
             <plugin id="Button" />
         </object-type>
-        <object-type name="Sprite" sid="761395373627726">
+        <object-type name="Fight" sid="761395373627726">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="759739512735519" speed="5">
@@ -213,7 +213,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite2" sid="442018009519660">
+        <object-type name="Run" sid="442018009519660">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="921439084693654" speed="5">
@@ -231,7 +231,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite3" sid="369846312258891">
+        <object-type name="SaltSmack" sid="369846312258891">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="831255854124093" speed="5">
@@ -248,7 +248,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite4" sid="550386704823774">
+        <object-type name="Heal" sid="550386704823774">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="441812291043523" speed="5">
