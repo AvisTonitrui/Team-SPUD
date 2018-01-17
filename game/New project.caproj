@@ -14,6 +14,7 @@
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
     </used-plugins>
     <used-behaviors />
@@ -57,16 +58,16 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="176519042636353" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GitHub Repos\Team-SPUD\assets\sweetato_back.png">
+                    <frame duration="1" hotspotX="0.567568" hotspotY="0.5" original-source="D:\GitHub Repos\Team-SPUD\assets\sweetato_back.png">
                         <collision-poly>
-                            <point x="0.203125" y="0.203125" />
-                            <point x="0.5" y="0.1875" />
-                            <point x="0.625" y="0.375" />
-                            <point x="0.65625" y="0.5" />
-                            <point x="0.625" y="0.625" />
-                            <point x="0.5" y="0.90625" />
-                            <point x="0.28125" y="0.71875" />
-                            <point x="0.203125" y="0.5" />
+                            <point x="0.0540541" y="0.148148" />
+                            <point x="0.567568" y="0.12963" />
+                            <point x="0.783784" y="0.351852" />
+                            <point x="0.837838" y="0.5" />
+                            <point x="0.783784" y="0.648148" />
+                            <point x="0.567568" y="0.981481" />
+                            <point x="0.189189" y="0.759259" />
+                            <point x="0.0540541" y="0.5" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -76,16 +77,16 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="299305509064794" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GitHub Repos\Team-SPUD\assets\Warriortatov2_back.png">
+                    <frame duration="1" hotspotX="0.613636" hotspotY="0.512195" original-source="D:\GitHub Repos\Team-SPUD\assets\Warriortatov2_back.png">
                         <collision-poly>
-                            <point x="0.203125" y="0.203125" />
-                            <point x="0.5" y="0.234375" />
-                            <point x="0.6875" y="0.3125" />
-                            <point x="0.734375" y="0.5" />
-                            <point x="0.734375" y="0.734375" />
-                            <point x="0.5" y="0.796875" />
-                            <point x="0.265625" y="0.734375" />
-                            <point x="0.265625" y="0.5" />
+                            <point x="0.181818" y="0.0487805" />
+                            <point x="0.613636" y="0.097561" />
+                            <point x="0.886364" y="0.219512" />
+                            <point x="0.954545" y="0.512195" />
+                            <point x="0.954545" y="0.878049" />
+                            <point x="0.613636" y="0.97561" />
+                            <point x="0.272727" y="0.878049" />
+                            <point x="0.272727" y="0.512195" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -95,16 +96,16 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="908484787678886" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GitHub Repos\Team-SPUD\assets\wizardtato_back.png">
+                    <frame duration="1" hotspotX="0.48" hotspotY="0.5" original-source="D:\GitHub Repos\Team-SPUD\assets\wizardtato_back.png">
                         <collision-poly>
-                            <point x="0.171875" y="0.171875" />
-                            <point x="0.5" y="0.0625" />
-                            <point x="0.84375" y="0.15625" />
-                            <point x="0.890625" y="0.5" />
-                            <point x="0.640625" y="0.640625" />
-                            <point x="0.5" y="0.9375" />
-                            <point x="0.25" y="0.75" />
-                            <point x="0.1875" y="0.5" />
+                            <point x="0.06" y="0.15" />
+                            <point x="0.48" y="0.0333333" />
+                            <point x="0.92" y="0.133333" />
+                            <point x="0.98" y="0.5" />
+                            <point x="0.66" y="0.65" />
+                            <point x="0.48" y="0.966667" />
+                            <point x="0.16" y="0.766667" />
+                            <point x="0.08" y="0.5" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -114,13 +115,41 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="8" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="387498721736803" speed="8">
+                    <frame duration="1" hotspotX="0.490196" hotspotY="0.388889" />
+                    <frame duration="1" hotspotX="0.470588" hotspotY="0.4" />
+                    <frame duration="1" hotspotX="0.45098" hotspotY="0.421053" />
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.4" />
+                    <frame duration="1" hotspotX="0.509804" hotspotY="0.388889" />
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.4" />
+                    <frame duration="1" hotspotX="0.45098" hotspotY="0.421053" />
+                    <frame duration="1" hotspotX="0.470588" hotspotY="0.4" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite5" sid="968987026270390">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="802553164871084" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground" sid="158308900173642">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\GitHub Repos\Team-SPUD\assets\Grass.png" />
+        </object-type>
+        <object-type name="Sprite6" sid="434540880822379">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="486478629990395" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite7" sid="359526737546681">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="849936157949584" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
