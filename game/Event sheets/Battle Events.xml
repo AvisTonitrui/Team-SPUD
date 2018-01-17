@@ -44,6 +44,19 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="118072302843357">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="831930574030217" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="639352602812451" type="Audio">
+                            <param id="0" name="Audio file">SPUD</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
         </event-group>
         <event-group description="" sid="493120820107337" title="Turn processor">
