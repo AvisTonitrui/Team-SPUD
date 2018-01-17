@@ -617,9 +617,9 @@
                         <behavior-instance type="Fade">
                             <properties>
                                 <active-at-start>Yes</active-at-start>
-                                <fade-in-time>2</fade-in-time>
+                                <fade-in-time>0.5</fade-in-time>
                                 <wait-time>600</wait-time>
-                                <fade-out-time>2</fade-out-time>
+                                <fade-out-time>0.5</fade-out-time>
                                 <destroy>After fade out</destroy>
                             </properties>
                         </behavior-instance>
