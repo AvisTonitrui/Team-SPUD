@@ -154,6 +154,7 @@
                 <instance-variable name="MagicResist" sid="273179752238995" type="number" />
                 <instance-variable comment="the speed attribute" name="Speed" sid="266372078120103" type="number" />
                 <instance-variable name="timer" sid="252346016179754" type="number" />
+                <instance-variable name="target" sid="344143132779194" type="number" />
             </instance-variables>
             <animation-folder>
                 <animation framecount="8" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="387498721736803" speed="8">
@@ -165,14 +166,6 @@
                     <frame duration="1" hotspotX="0.529412" hotspotY="0.4" />
                     <frame duration="1" hotspotX="0.45098" hotspotY="0.421053" />
                     <frame duration="1" hotspotX="0.470588" hotspotY="0.4" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Sprite5" sid="968987026270390">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="802553164871084" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>

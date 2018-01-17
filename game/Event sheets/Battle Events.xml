@@ -2,5 +2,166 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Battle events</name>
-    <events />
+    <events>
+        <variable constant="0" name="mushroomTurn" sid="596105872518273" static="0" type="number">0</variable>
+        <variable constant="0" name="sweetTurn" sid="904024087559865" static="0" type="number">0</variable>
+        <variable constant="0" name="turn" sid="752267141726709" static="0" type="number">0</variable>
+        <variable constant="0" name="warriorTurn" sid="134007799685746" static="0" type="number">0</variable>
+        <variable constant="0" name="wizardTurn" sid="862275471042600" static="0" type="number">0</variable>
+        <comment>incrementing timers if it is currently no one&apos;s turn</comment>
+        <event-group description="" sid="493120820107337" title="Turn processor">
+            <sub-events>
+                <event-block sid="599010271584829">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="304239264819365" type="System">
+                            <param id="0" name="Variable">turn</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Add to" sid="311743434430091" type="SweetTato">
+                            <param id="0" name="Instance variable">timer</param>
+                            <param id="1" name="Value">SweetTato.Speed</param>
+                        </action>
+                        <action id="-11" name="Add to" sid="494095166003426" type="WarriorTato">
+                            <param id="0" name="Instance variable">timer</param>
+                            <param id="1" name="Value">WarriorTato.Speed</param>
+                        </action>
+                        <action id="-11" name="Add to" sid="943724049245317" type="WizardTato">
+                            <param id="0" name="Instance variable">timer</param>
+                            <param id="1" name="Value">WizardTato.Speed</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="362830173274315">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="455836017840546" type="System">
+                                    <param id="0" name="Object">EvilMushrooms</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Add to" sid="644770590717118" type="EvilMushrooms">
+                                    <param id="0" name="Instance variable">timer</param>
+                                    <param id="1" name="Value">EvilMushrooms.Speed</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <comment>Checking who all gets a turn this time around</comment>
+                <event-block sid="864154862489755">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="765621239214537" type="System">
+                            <param id="0" name="Object">EvilMushrooms</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="756704022875888">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="454833304750599" type="EvilMushrooms">
+                                    <param id="0" name="Instance variable">timer</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">100</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="831853622308338" type="System">
+                                    <param id="0" name="Variable">mushroomTurn</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="631736466799092" type="System">
+                                    <param id="0" name="Variable">turn</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="578519697726389">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="293601448900898" type="SweetTato">
+                            <param id="0" name="Instance variable">timer</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">100</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="582422822515665" type="System">
+                            <param id="0" name="Variable">sweetTurn</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="297948979824553" type="System">
+                            <param id="0" name="Variable">turn</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="731094375363649">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="493474874816159" type="WarriorTato">
+                            <param id="0" name="Instance variable">HP</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">100</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="836442590339106" type="System">
+                            <param id="0" name="Variable">warriorTurn</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="155611854338292" type="System">
+                            <param id="0" name="Variable">turn</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="743163815945651">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="777357945893613" type="WizardTato">
+                            <param id="0" name="Instance variable">timer</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">100</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="222258394498751" type="System">
+                            <param id="0" name="Variable">wizardTurn</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="625981666342898" type="System">
+                            <param id="0" name="Variable">turn</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>processing enemy turns first, then letting the player take their turn in case of tie</comment>
+                <event-group description="" sid="444488197356148" title="Mushroom Turn">
+                    <sub-events>
+                        <event-block sid="885749527679658">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="242287032787714" type="System">
+                                    <param id="0" name="Variable">mushroomTurn</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="689724217559483">
+                                    <conditions>
+                                        <condition id="-11" name="For Each" sid="882860555645838" type="System">
+                                            <param id="0" name="Object">EvilMushrooms</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+    </events>
 </c2eventsheet>

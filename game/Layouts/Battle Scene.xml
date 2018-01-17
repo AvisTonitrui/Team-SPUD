@@ -90,7 +90,7 @@
                     </properties>
                     <instance-variables>
                         <HP>70</HP>
-                        <MP>0</MP>
+                        <MP>1</MP>
                         <Strength>4</Strength>
                         <Magic>0</Magic>
                         <Defense>4</Defense>
@@ -161,6 +161,7 @@
                         <MagicResist>1</MagicResist>
                         <Speed>5</Speed>
                         <timer>0</timer>
+                        <target>0</target>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -193,6 +194,7 @@
                         <MagicResist>1</MagicResist>
                         <Speed>5</Speed>
                         <timer>0</timer>
+                        <target>0</target>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -225,6 +227,7 @@
                         <MagicResist>1</MagicResist>
                         <Speed>5</Speed>
                         <timer>0</timer>
+                        <target>0</target>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
