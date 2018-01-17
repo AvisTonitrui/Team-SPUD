@@ -55,20 +55,7 @@
                             <param id="2" name="Value">0</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action id="-11" name="Add to" sid="311743434430091" type="SweetTato">
-                            <param id="0" name="Instance variable">timer</param>
-                            <param id="1" name="Value">SweetTato.Speed</param>
-                        </action>
-                        <action id="-11" name="Add to" sid="494095166003426" type="WarriorTato">
-                            <param id="0" name="Instance variable">timer</param>
-                            <param id="1" name="Value">WarriorTato.Speed</param>
-                        </action>
-                        <action id="-11" name="Add to" sid="943724049245317" type="WizardTato">
-                            <param id="0" name="Instance variable">timer</param>
-                            <param id="1" name="Value">WizardTato.Speed</param>
-                        </action>
-                    </actions>
+                    <actions />
                     <sub-events>
                         <event-block sid="362830173274315">
                             <conditions>
@@ -80,6 +67,39 @@
                                 <action id="-11" name="Add to" sid="644770590717118" type="EvilMushrooms">
                                     <param id="0" name="Instance variable">timer</param>
                                     <param id="1" name="Value">EvilMushrooms.Speed</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="366726429533087">
+                            <conditions>
+                                <condition id="-3" name="Is on-screen" sid="771875898216158" type="SweetTato" />
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Add to" sid="311743434430091" type="SweetTato">
+                                    <param id="0" name="Instance variable">timer</param>
+                                    <param id="1" name="Value">SweetTato.Speed</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="270173917471088">
+                            <conditions>
+                                <condition id="-3" name="Is on-screen" sid="138822601341519" type="WarriorTato" />
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Add to" sid="494095166003426" type="WarriorTato">
+                                    <param id="0" name="Instance variable">timer</param>
+                                    <param id="1" name="Value">WarriorTato.Speed</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="209534514334670">
+                            <conditions>
+                                <condition id="-3" name="Is on-screen" sid="731393440132581" type="WizardTato" />
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Add to" sid="943724049245317" type="WizardTato">
+                                    <param id="0" name="Instance variable">timer</param>
+                                    <param id="1" name="Value">WizardTato.Speed</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -227,11 +247,12 @@
                                                     <param id="1" name="Comparison">3</param>
                                                     <param id="2" name="Value">2</param>
                                                 </condition>
+                                                <condition id="-3" name="Is on-screen" sid="193750292160409" type="SweetTato" />
                                             </conditions>
                                             <actions>
                                                 <action id="-12" name="Subtract from" sid="667728088081810" type="SweetTato">
                                                     <param id="0" name="Instance variable">CurrentHP</param>
-                                                    <param id="1" name="Value">floor(5 * EvilMushrooms.Strength / SweetTato.Defense)</param>
+                                                    <param id="1" name="Value">int(5 * EvilMushrooms.Strength / SweetTato.Defense)</param>
                                                 </action>
                                                 <action id="0" name="Spawn another object" sid="396679164990627" type="SweetTato">
                                                     <param id="0" name="Object">DamageText</param>
@@ -239,7 +260,7 @@
                                                     <param id="2" name="Image point">2</param>
                                                 </action>
                                                 <action id="0" name="Set text" sid="193665238298462" type="DamageText">
-                                                    <param id="0" name="Text">floor(5 * EvilMushrooms.Strength / SweetTato.Defense)</param>
+                                                    <param id="0" name="Text">int(5 * EvilMushrooms.Strength / SweetTato.Defense)</param>
                                                 </action>
                                             </actions>
                                             <sub-events>
@@ -266,11 +287,12 @@
                                                     <param id="1" name="Comparison">3</param>
                                                     <param id="2" name="Value">4</param>
                                                 </condition>
+                                                <condition id="-3" name="Is on-screen" sid="717677155833493" type="WarriorTato" />
                                             </conditions>
                                             <actions>
                                                 <action id="-12" name="Subtract from" sid="980658011301415" type="WarriorTato">
                                                     <param id="0" name="Instance variable">CurrentHP</param>
-                                                    <param id="1" name="Value">floor(5 * EvilMushrooms.Strength / WarriorTato.Defense)</param>
+                                                    <param id="1" name="Value">int(5 * EvilMushrooms.Strength / WarriorTato.Defense)</param>
                                                 </action>
                                                 <action id="0" name="Spawn another object" sid="543696519612343" type="WarriorTato">
                                                     <param id="0" name="Object">DamageText</param>
@@ -278,7 +300,7 @@
                                                     <param id="2" name="Image point">2</param>
                                                 </action>
                                                 <action id="0" name="Set text" sid="320197645570586" type="DamageText">
-                                                    <param id="0" name="Text">floor(5 * EvilMushrooms.Strength / WarriorTato.Defense)</param>
+                                                    <param id="0" name="Text">int(5 * EvilMushrooms.Strength / WarriorTato.Defense)</param>
                                                 </action>
                                             </actions>
                                             <sub-events>
@@ -304,11 +326,12 @@
                                                     <param id="1" name="Comparison">3</param>
                                                     <param id="2" name="Value">6</param>
                                                 </condition>
+                                                <condition id="-3" name="Is on-screen" sid="925615105953196" type="WizardTato" />
                                             </conditions>
                                             <actions>
                                                 <action id="-12" name="Subtract from" sid="835322029611220" type="WizardTato">
                                                     <param id="0" name="Instance variable">CurrentHP</param>
-                                                    <param id="1" name="Value">floor(5 * EvilMushrooms.Strength / WizardTato.Defense)</param>
+                                                    <param id="1" name="Value">int(5 * EvilMushrooms.Strength / WizardTato.Defense)</param>
                                                 </action>
                                                 <action id="0" name="Spawn another object" sid="319115702054457" type="WizardTato">
                                                     <param id="0" name="Object">DamageText</param>
@@ -316,7 +339,7 @@
                                                     <param id="2" name="Image point">2</param>
                                                 </action>
                                                 <action id="0" name="Set text" sid="348974811581016" type="DamageText">
-                                                    <param id="0" name="Text">floor(5 * EvilMushrooms.Strength / WizardTato.Defense)</param>
+                                                    <param id="0" name="Text">int(5 * EvilMushrooms.Strength / WizardTato.Defense)</param>
                                                 </action>
                                             </actions>
                                             <sub-events>
@@ -602,7 +625,7 @@
                                     <actions>
                                         <action id="-12" name="Subtract from" sid="349948115289592" type="EvilMushrooms">
                                             <param id="0" name="Instance variable">HP</param>
-                                            <param id="1" name="Value">floor(5 * SweetTato.Strength/EvilMushrooms.Defense)</param>
+                                            <param id="1" name="Value">int(5 * SweetTato.Strength/EvilMushrooms.Defense)</param>
                                         </action>
                                         <action id="0" name="Spawn another object" sid="142876837638267" type="EvilMushrooms">
                                             <param id="0" name="Object">DamageText</param>
@@ -610,7 +633,7 @@
                                             <param id="2" name="Image point">2</param>
                                         </action>
                                         <action id="0" name="Set text" sid="114604191638895" type="DamageText">
-                                            <param id="0" name="Text">floor(5 * SweetTato.Strength/EvilMushrooms.Defense)</param>
+                                            <param id="0" name="Text">int(5 * SweetTato.Strength/EvilMushrooms.Defense)</param>
                                         </action>
                                         <action id="-9" name="Set value" sid="493161126529026" type="System">
                                             <param id="0" name="Variable">processing</param>
@@ -1052,7 +1075,7 @@
                                     <actions>
                                         <action id="-12" name="Subtract from" sid="822334972623023" type="EvilMushrooms">
                                             <param id="0" name="Instance variable">HP</param>
-                                            <param id="1" name="Value">floor(5 * WarriorTato.Strength/EvilMushrooms.Defense + 0.5)</param>
+                                            <param id="1" name="Value">int(5 * WarriorTato.Strength/EvilMushrooms.Defense + 0.5)</param>
                                         </action>
                                         <action id="0" name="Spawn another object" sid="458004003396844" type="EvilMushrooms">
                                             <param id="0" name="Object">DamageText</param>
@@ -1060,7 +1083,7 @@
                                             <param id="2" name="Image point">2</param>
                                         </action>
                                         <action id="0" name="Set text" sid="898948740257116" type="DamageText">
-                                            <param id="0" name="Text">floor(5 * WarriorTato.Strength/EvilMushrooms.Defense + 0.5)</param>
+                                            <param id="0" name="Text">int(5 * WarriorTato.Strength/EvilMushrooms.Defense + 0.5)</param>
                                         </action>
                                         <action id="-9" name="Set value" sid="650538690724685" type="System">
                                             <param id="0" name="Variable">processing</param>
@@ -1370,7 +1393,7 @@
                                     <actions>
                                         <action id="-12" name="Subtract from" sid="983722415661670" type="EvilMushrooms">
                                             <param id="0" name="Instance variable">HP</param>
-                                            <param id="1" name="Value">floor(5 * WizardTato.Strength/EvilMushrooms.Defense)</param>
+                                            <param id="1" name="Value">int(5 * WizardTato.Strength/EvilMushrooms.Defense)</param>
                                         </action>
                                         <action id="0" name="Spawn another object" sid="741260208294660" type="EvilMushrooms">
                                             <param id="0" name="Object">DamageText</param>
@@ -1378,7 +1401,7 @@
                                             <param id="2" name="Image point">2</param>
                                         </action>
                                         <action id="0" name="Set text" sid="149421936529286" type="DamageText">
-                                            <param id="0" name="Text">floor(5 * WizardTato.Strength/EvilMushrooms.Defense)</param>
+                                            <param id="0" name="Text">int(5 * WizardTato.Strength/EvilMushrooms.Defense)</param>
                                         </action>
                                         <action id="-9" name="Set value" sid="881541256435915" type="System">
                                             <param id="0" name="Variable">processing</param>
@@ -1512,7 +1535,7 @@
                                     <actions>
                                         <action id="-12" name="Subtract from" sid="468477793710540" type="EvilMushrooms">
                                             <param id="0" name="Instance variable">HP</param>
-                                            <param id="1" name="Value">floor(10 * WizardTato.Magic/EvilMushrooms.MagicResist)</param>
+                                            <param id="1" name="Value">int(10 * WizardTato.Magic/EvilMushrooms.MagicResist)</param>
                                         </action>
                                         <action id="0" name="Spawn another object" sid="334284858535358" type="EvilMushrooms">
                                             <param id="0" name="Object">DamageText</param>
@@ -1520,7 +1543,7 @@
                                             <param id="2" name="Image point">2</param>
                                         </action>
                                         <action id="0" name="Set text" sid="905212764193060" type="DamageText">
-                                            <param id="0" name="Text">floor(10 * WizardTato.Magic/EvilMushrooms.MagicResist)</param>
+                                            <param id="0" name="Text">int(10 * WizardTato.Magic/EvilMushrooms.MagicResist)</param>
                                         </action>
                                         <action id="-12" name="Subtract from" sid="994111961913582" type="WizardTato">
                                             <param id="0" name="Instance variable">CurrentMP</param>
