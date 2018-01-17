@@ -155,7 +155,59 @@
                                             <param id="0" name="Object">EvilMushrooms</param>
                                         </condition>
                                     </conditions>
-                                    <actions />
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="278676525233577" type="EvilMushrooms">
+                                            <param id="0" name="Instance variable">target</param>
+                                            <param id="1" name="Value">random(3)</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="825957167040716">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="109443314765981" type="EvilMushrooms">
+                                                    <param id="0" name="Instance variable">target</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-12" name="Subtract from" sid="723647252527557" type="SweetTato">
+                                                    <param id="0" name="Instance variable">HP</param>
+                                                    <param id="1" name="Value">5 * EvilMushrooms.Strength/SweetTato.Defense</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="755798420651918">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="144758784799501" type="EvilMushrooms">
+                                                    <param id="0" name="Instance variable">target</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-12" name="Subtract from" sid="156680776492833" type="WarriorTato">
+                                                    <param id="0" name="Instance variable">HP</param>
+                                                    <param id="1" name="Value">5 * EvilMushrooms.Strength/WarriorTato.Defense</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="573603391185272">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="160654654390509" type="EvilMushrooms">
+                                                    <param id="0" name="Instance variable">target</param>
+                                                    <param id="1" name="Comparison">5</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-12" name="Subtract from" sid="741761656153916" type="WizardTato">
+                                                    <param id="0" name="Instance variable">HP</param>
+                                                    <param id="1" name="Value">5 * EvilMushrooms.Strength/WizardTato.Defense</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                             </sub-events>
                         </event-block>
