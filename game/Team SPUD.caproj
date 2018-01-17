@@ -169,6 +169,7 @@
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="387498721736803" speed="8">
                     <frame duration="1" hotspotX="0.490196" hotspotY="0.509091">
                         <image-point name="Imagepoint 1" x="0.490196" y="-0.181818" />
+                        <image-point name="Imagepoint 2" x="1.11765" y="0.0727273" />
                     </frame>
                 </animation>
             </animation-folder>
@@ -357,6 +358,14 @@
                     <frame duration="1" hotspotX="0.463158" hotspotY="0.529126" />
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="DamageText" sid="956344149789979">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Fade" sid="199683827860605">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
         </object-type>
     </object-folder>
     <families />
