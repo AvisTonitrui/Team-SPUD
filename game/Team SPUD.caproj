@@ -19,7 +19,10 @@
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
     </used-plugins>
-    <used-behaviors />
+    <used-behaviors>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
+    </used-behaviors>
     <used-effects />
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
@@ -171,7 +174,7 @@
                     <frame duration="1" hotspotX="0.509804" hotspotY="0.388889" />
                     <frame duration="1" hotspotX="0.529412" hotspotY="0.4" />
                     <frame duration="1" hotspotX="0.45098" hotspotY="0.421053" />
-                    <frame duration="1" hotspotX="0.470588" hotspotY="0.4" />
+                    <frame duration="1" hotspotX="0.490196" hotspotY="0.509091" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -343,6 +346,22 @@
         </object-type>
         <object-type name="Text" sid="361982632747026">
             <plugin id="Text" />
+        </object-type>
+        <object-type name="highlight" sid="481732997806559">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="982794739884719">
+                    <behavior id="Fade" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="480380239884678">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="579287109111448" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />

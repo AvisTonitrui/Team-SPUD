@@ -344,9 +344,48 @@
                                             <param id="0" name="Object">Run</param>
                                         </condition>
                                     </conditions>
-                                    <actions />
+                                    <actions>
+                                        <action id="-2" name="Go to layout" sid="301915881626001" type="System">
+                                            <param id="0" name="Layout">Loss Screen</param>
+                                        </action>
+                                    </actions>
                                 </event-block>
                             </sub-events>
+                        </event-block>
+                        <comment>highlights target while selecting target</comment>
+                        <event-block sid="399449831353196">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="648715088607912" type="System">
+                                    <param id="0" name="Variable">processing</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                                <condition id="7" name="Cursor is over object" sid="724274875982765" type="Mouse">
+                                    <param id="0" name="Object">EvilMushrooms</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="429695398830355" type="EvilMushrooms">
+                                    <param id="0" name="Object">highlight</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="832288995768809">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="515813801460998" type="System">
+                                    <param id="0" name="Variable">processing</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                                <condition id="7" inverted="1" name="Cursor is over object" sid="295120675220116" type="Mouse">
+                                    <param id="0" name="Object">EvilMushrooms</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="846732768922464" type="highlight" />
+                            </actions>
                         </event-block>
                     </sub-events>
                 </event-group>
